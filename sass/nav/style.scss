@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url(../Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Medium";
+    src: url(../Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Bold";
+    src: url(../Roboto/Roboto-Bold.ttf);
+}
+
+
+nav {
+    .nav_many {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 130px;
+        gap: 100px;
+
+        .nav_left {
+            width: 45%;
+
+            img {
+                background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+                width: 100%;
+            }
+        }
+
+        .nav_right {
+            width: 55%;
+
+            h6 {
+                color: #0082F4;
+                font-family: "Medium";
+                font-size: 25px;
+                font-weight: 500;
+                letter-spacing: 2.5px;
+                text-transform: uppercase;
+            }
+
+            h5 {
+                color: #000;
+                font-family: "Bold";
+                font-size: 49px;
+                font-weight: 700;
+                line-height: 130%;
+                margin-top: 5px;
+                max-width: 500px;
+            }
+
+            p {
+                color: #000;
+                font-family: "Regular";
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 150%;
+                opacity: 0.6;
+                margin-top: 20px;
+                max-width: 503px;
+            }
+
+            button {
+                margin-top: 30px;
+                padding: 18px 30px;
+                border-radius: 10px;
+                background: #0082F4;
+                color: #FFF;
+                font-family: "Regular";
+                font-size: 20px;
+                font-weight: 400;
+                border: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+    nav {
+        .nav_many {
+            gap: 80px;
+
+            .nav_right {
+                h5 {
+                    font-size: 45px;
+                }
+
+                p {
+                    margin-top: 15px;
+                }
+            }
+
+            .nav_left {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 770px) and (max-width: 990px) {
+    nav {
+        .nav_many {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+
+            .nav_left {
+                width: 100%;
+            }
+
+            .nav_right {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+
+                h5 {
+                    max-width: 100%;
+                    border: 1px solid;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 447px) and (max-width: 769px) {
+    nav {
+        .nav_many {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            padding: 0 50px;
+
+            .nav_left {
+                width: 100%;
+            }
+
+            .nav_right {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+
+                h6 {
+                    font-size: 20px;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                }
+
+                h5 {
+                    max-width: 100%;
+                    font-size: 30px;
+                    max-width: 500px;
+                }
+
+                h6 {
+                    font-size: 25px;
+                    letter-spacing: 2px;
+                }
+
+                p {
+                    font-size: 20px;
+                    margin-top: 20px;
+                    max-width: 503px;
+                    line-height: 120%;
+                }
+
+                button {
+                    margin-top: 20px;
+                    padding: 15px 20px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

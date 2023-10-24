@@ -1,0 +1,112 @@
+@import url(../sass/main/style.css);
+@import url(../sass/nav/style.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url(../Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Medium";
+  src: url(../Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Bold";
+  src: url(../Roboto/Roboto-Bold.ttf);
+}
+header .header_many .header_right button {
+  color: #FFF;
+  font-family: "Regular";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+header .header_many {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 130px 0;
+}
+header .header_many .header_middle ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+header .header_many .header_middle ul a {
+  text-decoration: none;
+  font-family: "Regular";
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+header .header_many .header_middle ul a:hover {
+  color: #0082F4;
+}
+header .header_many .header_middle ul .header-li {
+  color: #0082F4;
+}
+header .header_many .header_right button {
+  padding: 15px 30px;
+  border-radius: 6px;
+  background: #0082F4;
+  border: none;
+  cursor: pointer;
+}
+header .header_many span {
+  display: none;
+}
+header hr {
+  margin-top: 20px;
+}
+
+@media (min-width: 770px) and (max-width: 990px) {
+  header .header_many .header_middle {
+    display: none;
+  }
+  header .header_many .header_right {
+    display: none;
+  }
+  header .header_many span {
+    display: block;
+    font-size: 25px;
+  }
+}
+@media (min-width: 448px) and (max-width: 769px) {
+  header .header_many {
+    padding: 20px 50px;
+  }
+  header .header_many .header_middle {
+    display: none;
+  }
+  header .header_many .header_right {
+    display: none;
+  }
+  header .header_many span {
+    display: block;
+    font-size: 25px;
+  }
+}
+@media (max-width: 447px) {
+  header .header_many {
+    padding: 10px 20px;
+  }
+  header .header_many .header_left img {
+    width: 70px;
+    height: 70px;
+  }
+  header .header_many .header_middle {
+    display: none;
+  }
+  header .header_many .header_right {
+    display: none;
+  }
+  header .header_many span {
+    display: block;
+    font-size: 25px;
+  }
+}/*# sourceMappingURL=style.css.map */
