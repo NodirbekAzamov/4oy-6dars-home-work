@@ -107,10 +107,9 @@ nav .nav_many .nav_right button {
   }
   nav .nav_many .nav_right h5 {
     max-width: 100%;
-    border: 1px solid;
   }
 }
-@media (min-width: 447px) and (max-width: 769px) {
+@media (min-width: 448px) and (max-width: 769px) {
   nav .nav_many {
     display: flex;
     align-items: center;
@@ -154,5 +153,46 @@ nav .nav_many .nav_right button {
     margin-top: 20px;
     padding: 15px 20px;
     font-size: 18px;
+  }
+}
+@media (max-width: 447px) {
+  nav .nav_many {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 0 20px;
+  }
+  nav .nav_many .nav_left {
+    width: 100%;
+  }
+  nav .nav_many .nav_right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  nav .nav_many .nav_right h6 {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  nav .nav_many .nav_right h5 {
+    max-width: 100%;
+    font-size: 25px;
+    max-width: 500px;
+  }
+  nav .nav_many .nav_right p {
+    font-size: 18px;
+    margin-top: 15px;
+    max-width: 503px;
+    line-height: 120%;
+  }
+  nav .nav_many .nav_right button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */

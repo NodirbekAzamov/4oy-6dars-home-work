@@ -1,1 +1,18 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url(../Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Medium";
+  src: url(../Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Bold";
+  src: url(../Roboto/Roboto-Bold.ttf);
+}/*# sourceMappingURL=style.css.map */
